@@ -1,3 +1,9 @@
+/*
+    Author: Ian Pedraza
+    Más contenido en:
+    https://www.ianpedraza.com/
+*/
+
 package com.ianpedraza.descargas.Broadcasts;
 
 import android.app.DownloadManager;

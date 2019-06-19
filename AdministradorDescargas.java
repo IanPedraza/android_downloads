@@ -24,7 +24,6 @@ import com.ianpedraza.descargas.Broadcasts.DonwloadCompleteReceiver;
 public class AdministradorDescargas {
 
     private static final String TAG = "MyDownloadManager.class";
-    private static final String EXTENSION = ".bkly";
     private String url;
     private static final int CODIGO_SOLICITUD = 6545;
     private String nombre_archivo;

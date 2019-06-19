@@ -1,3 +1,10 @@
+/*
+    Author: Ian Pedraza
+
+    Más contenido en:
+    https://www.ianpedraza.com/
+*/
+
 package com.ianpedraza.descargas.Objetos;
 
 import android.Manifest;
@@ -104,10 +111,8 @@ public class AdministradorDescargas {
         switch (requestCode) {
             case CODIGO_SOLICITUD: {
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // permission was granted! Do the work
                     executeDownload();
                 } else {
-                    // permission denied!
                     Toast.makeText(contexto, "Please give permissions ", Toast.LENGTH_LONG).show();
                 }
                 return;
@@ -123,7 +128,6 @@ public class AdministradorDescargas {
         request.setDescription("Descargando archvio " + nombre_archivo);
         request.setTitle("Descargando");
 
-        // in order for this if to run, you must use the android 3.2 to compile your app
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             request.allowScanningByMediaScanner();
             request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
